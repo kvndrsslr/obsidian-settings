@@ -1,0 +1,30 @@
+/* abcjs - music notation */
+
+.abcjs-container svg * {
+  fill: var(--text-muted) !important;
+  font-family: var(--custom-font);
+}
+
+.abcjs-title * {
+  stroke: var(--text-accent) !important;
+}
+
+.abcjs-container svg .abcjs-beam-elem {
+  fill: var(--text-faint) !important;
+}
+
+.abcjs-container svg .abcjs-staff-extra {
+  fill: var(--text-faint) !important;
+}
+
+.abcjs-container svg .abcjs-note {
+  fill: var(--text-faint) !important;
+} 
+
+.abcjs-ending {
+  stroke: var(--text-faint) !important;
+}
+
+.abcjs-container svg text {
+  stroke: var(--text-faint) !important;
+}

@@ -1,0 +1,709 @@
+:root {
+  --custom-font: "iA Writer Quattro V","iA Writer Quattro S";
+  --font-monospace: 'JetBrainsMono Nerd Font Mono',monospace;
+  --custom-H1-font-size: 38px;
+  --custom-H2-font-size: 34px;
+  --custom-H3-font-size: 30px;
+  --custom-H4-font-size: 26px;
+  --custom-H5-font-size: 22px;
+  --custom-H6-font-size: 18px;
+  --dark0-hard: #1d2021;
+  --dark0: #282828;
+  --dark0-soft: #32302f;
+  --dark1: #3c3836;
+  --dark2: #504945;
+  --dark3: #665c54;
+  --dark4: #7c6f64;
+  --gray: #928374;
+  --light0-hard: #f9f5d7;
+  --light0: #fbf1c7;
+  --light0-soft: #f2e5bc;
+  --light1: #ebdbb2;
+  --light2: #d5c4a1;
+  --light3: #bdae93;
+  --light4: #a89984;
+  --bright-red: #fb4934;
+  --bright-green: #b8bb26;
+  --bright-yellow: #fabd2f;
+  --bright-blue: #83a598;
+  --bright-purple: #d3869b;
+  --bright-aqua: #8ec07c;
+  --bright-orange: #fe8019;
+}
+
+.theme-dark {
+  --background-primary: var(--dark0);
+  --background-primary-alt: var(--dark1);
+  --background-secondary: var(--dark0);
+  --background-secondary-alt: var(--dark1);
+  --text-normal: var(--light0);
+  --text-faint: var(--light2);
+  --text-muted: var(--light4);
+  --text-title-h1: var(--bright-red);
+  --text-title-h2: var(--bright-orange);
+  --text-title-h3: var(--bright-yellow);
+  --text-title-h4: var(--bright-green);
+  --text-title-h5: var(--bright-aqua);
+  --text-title-h6: var(--bright-purple);
+  --text-link: var(--bright-blue);
+  --text-a: var(--bright-green);
+  --text-a-hover: var(--bright-green);
+  --text-mark: var(--bright-orange);
+  --pre-code: var(--dark1);
+  --text-highlight-bg: var(--dark2);
+  --interactive-accent: var(--dark4);
+  --text-on-accent: var(--light0);
+  --interactive-before: var(--bright-red);
+  --background-modifier-border: var(--dark2);
+  --background-modifier-cover: rgba(40,40,40,0.2);
+  --text-accent: var(--bright-yellow);
+  --interactive-accent-rgb: var(--bright-yellow);
+  --inline-code: var(--bright-blue);
+  --code-block: var(--bright-blue);
+  --vim-cursor: var(--bright-orange);
+  --text-selection: rgba(80,73,69,0.99);
+}
+
+.theme-light {
+  --background-primary: var(--light0);
+  --background-primary-alt: var(--light0);
+  --background-secondary: var(--light0-hard);
+  --background-secondary-alt: var(--light1);
+  --text-normal: var(--dark0);
+  --text-faint: var(--dark3);
+  --text-title-h1: var(--bright-red);
+  --text-title-h2: var(--bright-orange);
+  --text-title-h3: var(--bright-yellow);
+  --text-title-h4: var(--bright-green);
+  --text-title-h5: var(--bright-aqua);
+  --text-link: var(--bright-blue);
+  --text-a: var(--bright-orange);
+  --text-a-hover: var(--bright-blue);
+  --text-mark: var(--bright-yellow);
+  --pre-code: var(--light1);
+  --text-highlight-bg: var(--bright-yellow);
+  --interactive-accent: var(--bright-orange);
+  --interactive-before: var(--light4);
+  --background-modifier-border: var(--light2);
+  --text-accent: var(--bright-orange);
+  --interactive-accent-rgb: var(--bright-orange);
+  --inline-code: var(--bright-blue);
+  --vim-cursor: var(--bright-orange);
+  --text-selection: rgba(189,174,147,1);
+}
+
+.workspace-leaf-content * {
+  border-radius: 0 !important;
+}
+
+html,
+body {
+  font-variant-ligatures: additional-ligatures common-ligatures discretionary-ligatures contextual historical-ligatures;
+  font-size: 16px !important;
+  font-family: var(--custom-font);
+}
+
+strong {
+  font-weight: 600 !important;
+}
+
+/* UI Styling */
+
+.graph-controls {
+  top: initial !important;
+  left: initial !important;
+  bottom: 8px !important;
+  right: 8px !important
+}
+
+.workspace-split.mod-root>.workspace-leaf:first-of-type .workspace-leaf-content {
+  border-top-left-radius: 0px !important;
+}
+
+.workspace-split.mod-vertical>*>.workspace-leaf-resize-handle,
+.workspace-split.mod-left-split>.workspace-leaf-resize-handle,
+.workspace-split.mod-right-split>.workspace-leaf-resize-handle {
+  width: 1px !important;
+}
+
+/* vertical resize-handle */
+
+.workspace-split.mod-vertical>*>.workspace-leaf-resize-handle,
+.workspace-split.mod-left-split>.workspace-leaf-resize-handle,
+.workspace-split.mod-right-split>.workspace-leaf-resize-handle {
+  width: 1px !important;
+  background-color: var(--background-primary-alt);
+  height: 100%;
+}
+
+.workspace-split.mod-left-split {
+  border-right: solid 1px var(--background-primary);
+}
+
+/* horizontal resize-handle */
+
+.workspace-split.mod-horizontal>*>.workspace-leaf-resize-handle {
+  height: 1px !important;
+  background-color: var(--background-primary-alt);
+}
+
+/* ribbons */
+
+.workspace-ribbon {
+  width: 32px !important;
+  flex: 0 0 32px !important;
+}
+
+.workspace-ribbon.mod-left {
+  border-right-color: var(--background-primary-alt) !important;
+}
+
+.workspace-ribbon.mod-left.is-collapsed {
+  border-right-color: var(--background-primary) !important;
+}
+
+.workspace-ribbon.mod-right {
+  width: 0px !important;
+  flex: 0 0 0 !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.workspace-ribbon.mod-right,
+.workspace-ribbon.mod-right.is-collapsed {
+  border-left-color: var(--background-primary-alt) !important;
+}
+
+.workspace-ribbon-collapse-btn {
+  display: none !important;
+}
+
+/* sidebar tabs */
+
+.workspace-tab-container-before.is-before-active,
+.workspace-tab-container-after.is-after-active,
+.workspace-tab-header.is-before-active,
+.workspace-tab-header.is-after-active {
+  background-color: var(--background-primary) !important;
+}
+
+.workspace-tab-container-before {
+  width: 100% !important;
+}
+
+.mod-right-split .workspace-tab-container-before,
+.workspace-tab-container-after {
+  width: 0 !important;
+}
+
+.workspace-tabs {
+  padding: 0 !important;
+}
+
+.workspace-tab-header,
+.workspace-leaf,
+.workspace-tab-header-inner {
+  border-radius: 0 !important;
+}
+
+.workspace-tab-header-inner {
+  padding: 4px 12px !important;
+}
+
+.workspace-tab-header {
+  border-right: solid 1px var(--background-secondary);
+}
+
+.workspace-tab-header.is-active {
+  background-color: var(--background-primary-alt) !important;
+  color: var(--bright-yellow) !important;
+}
+
+.workspace-tab-header-container {
+  padding-top: 0 !important;
+  height: 28px !important;
+  border-style: none none solid none !important;
+  border-width: 1px;
+  border-color: var(--dark1);
+}
+
+/* view headers */
+
+.view-header {
+  background-color: var(--background-primary-alt) !important;
+}
+
+.view-header-title-container:after {
+  display: none;
+}
+
+.side-dock-actions {
+  margin-top: 0px !important;
+}
+
+.side-dock-settings {
+  margin-bottom: -4px !important;
+}
+
+.side-dock-ribbon-action {
+  padding: 4px 0 !important;
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-header {
+  display: none !important;
+}
+
+.workspace-leaf-content[data-type="tag"] .nav-header {
+  display: none !important;
+}
+
+.nav-folder.mod-root > .nav-file-title, .nav-folder.mod-root > .nav-folder-title {
+  font-size: 14px;
+}
+
+/* button color consistency */
+
+.nav-action-button.is-active .widget-icon {
+  fill: var(--text-on-accent);
+}
+
+.nav-action-button:hover .widget-icon {
+  fill: var(--text-accent) !important;
+}
+
+.side-dock-ribbon-action * {
+  stroke: var(--text-faint) !important;
+}
+
+/* graph view */
+
+.modal-bg {
+  backdrop-filter: blur(2px);
+}
+
+/* content tab padding */
+
+.markdown-preview-view, .markdown-source-view {
+  padding: 0ex 2ex !important;
+}
+
+
+/* Inline styles */
+
+/** ...... 2.15.1 aside format -- https://discord.com/channels/686053708261228577/707816848615407697/784964375806083124 */
+
+aside {
+  width: 40%;
+  padding-left: .5rem;
+  margin-left: 1rem;
+  margin-top: .5rem;
+  float: right;
+  border: solid 2px var(--background-modifier-border);
+  border-style: none none solid solid;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+aside>p {
+  margin: .5rem;
+}
+
+/* tables */
+
+.markdown-preview-view table {
+  padding: 0;
+  word-break: initial;
+}
+
+.markdown-preview-view table tr {
+  border-top: 1px solid var(--background-modifier-border);
+  margin: 0;
+  padding: 0;
+}
+
+.markdown-preview-view table tr:nth-child(2n) {
+  background-color: var(--background-primary-alt);
+}
+
+.markdown-preview-view table tr th {
+  font-weight: bold;
+  border: 2px solid  var(--background-modifier-border);
+  border-bottom-color: var(--interactive-accent-rgb);
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+  background-color: var(--background-primary-alt);
+}
+
+.markdown-preview-view table tr td {
+  border: 2px solid  var(--background-modifier-border);
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+.markdown-preview-view table tr th:first-child, .markdown-preview-view table tr td:first-child {
+  margin-top: 0;
+}
+
+.markdown-preview-view table tr th:last-child, .markdown-preview-view table tr td:last-child {
+  margin-bottom: 0;
+}
+
+/* mermaid */
+
+.mermaid .note {
+  fill: var(--interactive-accent-rgb) !important;
+}
+
+.mermaid .noteText, .mermaid .noteText > tspan {
+  fill: var(--background-primary) !important;
+}
+
+/* checkboxes */
+
+.markdown-preview-view .task-list-item-checkbox {
+  filter: none;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50% !important;
+  border: 1px solid var(--background-modifier-border);
+  padding: 0;
+  vertical-align: top;
+}
+
+input[type="checkbox"]:focus {
+  outline: 0;
+}
+
+input[type="checkbox"]:checked {
+  position: relative;
+  background-color: var(--text-accent) !important;
+  border: 1px solid var(--text-accent) !important;
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23282828"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+
+/* headings */
+
+.markdown-preview-section h1 {
+  font-weight: 500 !important;
+  font-size: var(--custom-H1-font-size) !important;
+  color: var(--text-title-h1) !important;
+}
+
+.markdown-preview-section h2 {
+  font-weight: 500 !important;
+  font-size: var(--custom-H2-font-size) !important;
+  color: var(--text-title-h2) !important;
+}
+
+.markdown-preview-section h3 {
+  font-weight: 500 !important;
+  font-size: var(--custom-H3-font-size) !important;
+  color: var(--text-title-h3) !important;
+}
+
+.markdown-preview-section h4 {
+  font-weight: 500 !important;
+  font-size: var(--custom-H4-font-size) !important;
+  color: var(--text-title-h4) !important;
+}
+
+.markdown-preview-section h5 {
+  font-weight: 500 !important;
+  font-size: var(--custom-H5-font-size) !important;
+  color: var(--text-title-h5) !important;
+}
+
+.markdown-preview-section h6 {
+  font-weight: 500 !important;
+  font-size: var(--custom-H6-font-size) !important;
+  color: var(--text-title-h6) !important;
+}
+
+/** ........ 2.11.3 Heading Horizontal Lines -- https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/288?u=tallguyjenks */
+
+.markdown-preview-section h1, .markdown-preview-section h2, .markdown-preview-section h3,
+.markdown-preview-section h4, .markdown-preview-section h5, .markdown-preview-section h6 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.markdown-preview-section h1:before, .markdown-preview-section h1:after,
+.markdown-preview-section h2:before, .markdown-preview-section h2:after,
+.markdown-preview-section h3:before, .markdown-preview-section h3:after,
+.markdown-preview-section h4:before, .markdown-preview-section h4:after, 
+.markdown-preview-section h5:before, .markdown-preview-section h5:after, 
+.markdown-preview-section h6:before, .markdown-preview-section h6:after {
+  content: '';
+  background: var(--background-primary-alt);
+  height: .1em;
+  margin: .2em;
+  flex: 1;
+}
+
+/* link previews */
+
+.popover {
+  border: 2px solid var(--background-primary-alt) !important;
+}
+
+.popover.hover-popover {
+  max-height: 600px;
+  width: 500px;
+  min-height: 200px;
+  overflow:overlay;
+}
+
+.popover.hover-popover .markdown-embed {
+  height: 600px;
+}
+
+
+/** ...... 2.3.5 Make code blocks wrap in preview mode too */
+
+.theme-dark code[class*="language-"], .theme-dark pre[class*="language-"], .theme-light code[class*="language-"], .theme-light pre[class*="language-"] {
+  word-wrap: break-word !important;
+  white-space: pre-wrap !important;
+  text-shadow: none !important;
+}
+
+/** ...... 2.1.4 Bullet points in preview -- https://discord.com/channels/686053708261228577/702656734631821413/772094128832905226 */
+
+ul {
+  padding-inline-start: 20px;
+}
+
+ul, ul ul, ol ul, ul ul ul, ol ul ul {
+  list-style: none;
+}
+
+li>p {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul li:not(.task-list-item)::before {
+  content: '•';
+  color: var(--bright-yellow);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.15em;
+  padding: 0;
+  font-weight: bold;
+
+}
+
+ul ul li:not(.task-list-item)::before {
+  content: '•';
+}
+
+ul ul ul li:not(.task-list-item)::before {
+  content: '•';
+}
+
+/* Links */
+
+a {
+  color: var(--text-a) !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--text-a-hover) !important;
+  text-decoration: underline !important;
+}
+
+mark {
+  background-color: var(--text-mark) !important;
+  color: var(--background-primary) !important;
+}
+
+.suggestion-item.is-selected {
+  background-color: var(--background-primary-alt) !important;
+}
+
+/* make embeddings easier to spot */
+
+.markdown-embed-title {
+  font-weight: 600 !important;
+}
+
+.markdown-embed {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+
+/** ...... 2.4.3 Stylish Block Quotes -- https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/39 */
+
+blockquote:before {
+  font: 14px/20px italic Times, serif;
+  content: "“";
+  color: var(--bright-purple);
+  font-size: 3em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+
+/* ...... 2.4.4 General Font Formatting */
+
+b, strong {
+  color: var(--bright-red) !important;
+}
+
+i, em {
+  color: var(--bright-yellow) !important;
+}
+
+u {
+  color: var(--bright-purple) !important;
+}
+
+del {
+  color: var(--gray);
+}
+
+/* justification */
+
+.markdown-preview-view p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* definition lists */
+
+dl {
+  line-height: 1.15em;
+}
+
+dt {
+  color: var(--bright-yellow);
+  font-weight: bold;
+}
+
+dd {
+  color: var(--bright-yellow);
+  font-style: italic;
+}
+
+dd::before {
+  content: '├─ ';
+  margin-left: -1.5em;
+  color: var(--bright-orange);
+  font-style: normal;
+}
+
+dd:last-child::before {
+  content: '└─ ';
+  margin-left: -1.5em;
+  color: var(--bright-orange);
+  font-style: normal;
+}
+
+
+/** ...... 2.8.1 Tag Pills -- https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/72 */
+
+.tag:not(.token) {
+  background-color: var(--background-primary-alt);
+  border: none;
+  color: var(--text-muted) !important;
+  font-size: 14px;
+  padding: 0px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px;
+  cursor: pointer;
+  border-radius: 14px !important;
+  font-weight: bold;
+}
+
+.tag:not(.token):hover {
+  text-decoration: none !important;
+  color: var(--text-faint) !important;
+  background-color: var(--text-highlight-bg);
+}
+
+.tag[href^="#📥️"] {
+  background-color: var(--light4);
+  color: var(--light4) !important;
+}
+
+.tag[href^="#🌱️"] {
+  background-color: var(--bright-aqua);
+  color: var(--bright-aqua) !important;
+}
+
+.tag[href^="#🌞️"] {
+  background-color: var(--bright-aqua);
+  color: var(--bright-aqua) !important;
+}
+
+.tag[href^="#🌲️"] {
+  background-color: var(--bright-aqua);
+  color: var(--bright-aqua) !important;
+}
+
+.tag[href^="#✏"] {
+  background-color: var(--bright-blue);
+  color: var(--bright-blue) !important;
+}
+
+.tag[href^="#✅️"] {
+  background-color: var(--bright-orange);
+  color: var(--bright-orange) !important;
+}
+
+.tag[href^="#🗺️"] {
+  background-color: var(--bright-yellow);
+  color: var(--bright-yellow) !important;
+}
+
+.tag[href^="#⚙️"] {
+  background-color: var(--dark3);
+  color: var(--dark3) !important;
+}
+
+.tag[href^="#❗️"] {
+  background-color: var(--light1);
+  color: var(--light1) !important;
+}
+
+/** ...... 2.15.2 Buttons -- https://discord.com/channels/686053708261228577/744933215063638183/784289179328708648 */
+
+.date_button_today {
+  background-color: var(--neutral-aqua);
+  font-weight: bold;
+  margin-right: 0%;
+}
+
+.date_button_today:hover {
+  background-color: var(--bright-aqua);
+}
+
+.date_button {
+  background-color: var(--dark1);
+}
+
+.date_button:hover {
+  background-color: var(--dark3);
+}

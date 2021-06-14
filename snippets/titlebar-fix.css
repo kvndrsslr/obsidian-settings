@@ -1,0 +1,12 @@
+/* titlebar fix */
+
+:not(.is-fullscreen).mod-macos .titlebar {
+  height: 28px !important;
+  padding: 0 !important;
+  background-color: var(--background-primary-alt);
+  border-bottom: solid 1px var(--background-primary);
+}
+
+:not(.is-fullscreen).mod-macos body {
+  padding-top: 28px !important;
+}

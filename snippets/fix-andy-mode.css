@@ -1,0 +1,46 @@
+body.plugin-sliding-panes-rotate-header .workspace>.mod-root .view-header {
+  text-orientation: sideways;
+}
+
+body.plugin-sliding-panes-stacking .workspace>.mod-root>.workspace-leaf {
+  box-shadow: none !important;
+}
+
+body.plugin-sliding-panes-rotate-header .workspace>.mod-root>.workspace-leaf>.workspace-leaf-content>.view-header {
+  border-style: none solid none none !important;
+  border-width: 1px !important;
+  border-color: var(--background-primary) !important;
+}
+
+body.plugin-sliding-panes-rotate-header .workspace>.mod-root>.workspace-leaf.mod-active>.workspace-leaf-content>.view-header {
+  border-style: none solid none none !important;
+  border-width: 1px !important;
+  border-color: var(--interactive-accent-rgb) !important;
+}
+
+body.plugin-sliding-panes-rotate-header .workspace>.mod-root>.workspace-leaf>.workspace-leaf-content>.view-header>.view-header-title-container:after {
+  display: none;
+}
+
+body.plugin-sliding-panes-rotate-header .workspace>.mod-root>.workspace-leaf>.workspace-leaf-content>.view-header>.view-header-title-container:before {
+  display: none;
+}
+
+body.plugin-sliding-panes-rotate-header .view-header .view-header-icon {
+  margin: 0 !important;
+  position: absolute;
+  top: 6px;
+}
+
+body.plugin-sliding-panes-rotate-header .mod-active .view-header .view-header-icon {
+  color: var(--bright-yellow) !important;
+}
+
+body.plugin-sliding-panes-rotate-header .workspace>.mod-root>.workspace-leaf>.workspace-leaf-content>.view-header>.view-header-title-container>.view-header-title {
+  padding: 0 !important;
+}
+
+body.plugin-sliding-panes-rotate-header .view-header {
+  padding-top: 28px !important;
+  margin: 0 !important;
+}

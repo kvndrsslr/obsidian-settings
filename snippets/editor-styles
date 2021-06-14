@@ -1,0 +1,5 @@
+.CodeMirror-cursor {
+  border-color: var(--text-muted) !important;
+  opacity: 60% !important;
+}
+

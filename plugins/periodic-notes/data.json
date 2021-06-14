@@ -1,0 +1,1 @@
+{"showGettingStartedBanner":true,"hasMigratedDailyNoteSettings":true,"hasMigratedWeeklyNoteSettings":false,"daily":{"folder":"Journal","template":"Templates/Temporal/Daily.md","enabled":true},"weekly":{"format":"","template":"Templates/Temporal/weekly.md","folder":"Journal","enabled":true},"monthly":{"format":"","template":"","folder":""}}

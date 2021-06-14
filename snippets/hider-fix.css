@@ -1,0 +1,54 @@
+/* Frameless */
+
+.hider-frameless .workspace-split.mod-left-split>.workspace-tabs {
+    padding-top: 18px;
+}
+
+.hider-frameless .titlebar {
+    position     : fixed !important;
+    z-index      : 20 !important;
+    top          : 0px !important;
+    left         : 0px !important;
+    height       : 28px !important;
+    width        : 95px !important;
+    /* background   : var(--background-secondary-alt) !important; */
+    background-image: linear-gradient(to right, var(--background-secondary-alt) 60%, transparent) !important;
+    border-width : 0px 0px 0px 0px !important;
+    border-radius: 0px 0px 0px 0px !important;
+    border-color : var(--background-primary-alt) !important;
+    border-style : solid !important;
+    display      : block !important;
+    margin       : 0px !important;
+}
+
+.hider-frameless .titlebar-inner {
+    display: none !important;
+}
+
+.hider-frameless .workspace-tab-container-before {
+    width: 12px !important;
+}
+
+.hider-frameless .workspace-split.mod-left-split>.workspace-tabs {
+    padding-top: 28px !important;
+}
+
+.hider-frameless .workspace-split.mod-left-split>.workspace-tabs {
+    padding-top: 0px !important;
+}
+
+.hider-frameless .workspace-tab-container-before {
+    width: 100% !important;
+}
+
+.hider-frameless .mod-right-split .workspace-tab-container-before {
+    width: 0 !important;
+}
+
+.hider-frameless .workspace-tab-container-after {
+    width: 0 !important;
+}
+
+.hider-frameless .side-dock-actions {
+    margin-top: 32px !important;
+}  

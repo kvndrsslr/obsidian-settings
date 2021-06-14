@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "e8e9ca099e4dd256",
+    "type": "split",
+    "children": [
+      {
+        "id": "e2fdfa9be2b93dbc",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Scratchpad.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "032f4c438e04d775",
+    "type": "split",
+    "children": [
+      {
+        "id": "565aa2c46d310bc0",
+        "type": "tabs",
+        "dimension": 34.12908930150309,
+        "children": [
+          {
+            "id": "2ae5e45461ad9de0",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "bc67383216fb16d2",
+        "type": "tabs",
+        "dimension": 65.87091069849691,
+        "children": [
+          {
+            "id": "d15df31f556f02dc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c9602a199f6a52b6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "04fcd615fc937d2c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "ad292b93fc28e939",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 402.5
+  },
+  "right": {
+    "id": "a12a86cf7585e1f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6d0c3861f14cff0",
+        "type": "tabs",
+        "dimension": 22.902990517870165,
+        "children": [
+          {
+            "id": "f7f7662a42a21e6e",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Scratchpad.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.6492878873995691,
+                  "close": true
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "7a3b81e8ea16dce8",
+        "type": "tabs",
+        "dimension": 33.479212253829324,
+        "children": [
+          {
+            "id": "69cdaa525a92cc18",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Scratchpad.md"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "2dcbc09d30ebcf62",
+        "type": "tabs",
+        "dimension": 43.61779722830052,
+        "children": [
+          {
+            "id": "2200ab3cfb6761d9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Scratchpad.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "601b6968bd7fe0cc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Scratchpad.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 389.5,
+    "collapsed": true
+  },
+  "active": "e2fdfa9be2b93dbc",
+  "lastOpenFiles": [
+    "Scratchpad.md",
+    "SFB/SFB Structure.md",
+    "SFB/SFB B2.md",
+    "Untitled.md",
+    "Pen & Paper/2H/Zweihander.md",
+    "Cool Terminal Programs to Check out.md",
+    "Cleaning Safari History.md",
+    "Finances.md",
+    "`YK-ADHD.md",
+    "`YK-LIFEPROD.md"
+  ]
+}

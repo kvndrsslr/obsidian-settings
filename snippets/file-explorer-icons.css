@@ -1,0 +1,51 @@
+/** ........ 2.2.3 Top Level Folder Icons -- https://discord.com/channels/686053708261228577/702656734631821413/805318111917113354 */
+
+.nav-folder-children .nav-file-title-content:first-child::before {
+  content: "\e924  ";
+  font-family: "IcoMoon-Free";
+}
+
+.nav-folder-children .nav-folder-title-content::before {
+  content: "\e930  ";
+  font-family: "IcoMoon-Free";
+}
+
+.nav-folder-title[data-path="+Medium"] .nav-folder-title-content::before {
+  content: "📜️ ";
+  font-size: 1.3em;
+}
+
+.nav-folder-title[data-path="+Newsletter"] .nav-folder-title-content::before {
+  content: "📰️ ";
+  font-size: 1.3em;
+}
+
+.nav-folder-title[data-path="+YouTube"] .nav-folder-title-content::before {
+  content: "🔴️ ";
+  font-size: 1.3em;
+}
+
+.nav-folder-title[data-path="Journal"] .nav-folder-title-content::before {
+  content: "📅 ";
+  font-size: 1.3em;
+}
+
+.nav-folder-title[data-path="Media"] .nav-folder-title-content::before {
+  content: "🖼️ ";
+  font-size: 1.3em;
+}
+
+.nav-folder-title[data-path="Templates"] .nav-folder-title-content::before {
+  content: "⚙️ ";
+  font-size: 1.3em;
+}
+
+.nav-folder-title[data-path="Ancestry"] .nav-folder-title-content::before {
+  content: "🌳️ ";
+  font-size: 1.3em;
+}
+
+.nav-folder-title[data-path="CRM"] .nav-folder-title-content::before {
+  content: "📇️ ";
+  font-size: 1.3em;
+}

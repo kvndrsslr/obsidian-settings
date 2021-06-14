@@ -1,0 +1,120 @@
+.CodeMirror-cursor {
+  border-color: var(--text-muted) !important;
+  opacity: 60% !important;
+}
+
+/* links */
+
+.cm-hmd-internal-link, .cm-url {
+  color: var(--text-a) !important;
+  text-decoration: none !important;
+}
+
+.cm-hmd-internal-link:hover, .cm-url:hover {
+  color: var(--text-a-hover) !important;
+  text-decoration: underline !important;
+}
+
+/* formatting */
+
+.cm-formatting-highlight, .cm-highlight {
+  background-color: var(--text-mark) !important;
+  color: var(--background-primary) !important;
+}
+
+.cm-s-obsidian .cm-strong {
+  color: var(--bright-red) !important;
+}
+
+span.cm-em {
+  color: var(--bright-yellow) !important;
+}
+
+/* headings */
+
+.cm-header-1 {
+  font-weight: 500 !important;
+  font-size: var(--custom-H1-font-size) !important;
+  color: var(--text-title-h1) !important;
+}
+
+.cm-header-2 {
+  font-weight: 500 !important;
+  font-size: var(--custom-H2-font-size) !important;
+  color: var(--text-title-h2) !important;
+}
+
+.cm-header-3 {
+  font-weight: 500 !important;
+  font-size: var(--custom-H3-font-size) !important;
+  color: var(--text-title-h3) !important;
+}
+
+.cm-header-4 {
+  font-weight: 500 !important;
+  font-size: var(--custom-H4-font-size) !important;
+  color: var(--text-title-h4) !important;
+}
+
+.cm-header-5 {
+  font-weight: 500 !important;
+  font-size: var(--custom-H5-font-size) !important;
+  color: var(--text-title-h5) !important;
+}
+
+.cm-header-6 {
+  font-weight: 500 !important;
+  font-size: var(--custom-H6-font-size) !important;
+  color: var(--text-title-h6) !important;
+}
+
+/* lists */
+
+.CodeMirror-line span.cm-formatting-list-ul {
+  color: var(--bright-yellow);
+}
+
+
+/** ...... 2.3.3 Shortened Url Links -- https://forum.obsidian.md/t/hide-or-truncate-urls-in-editor-using-css/359/3 */
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-string.cm-url:not(.cm-formatting) {
+  font-size: 0.01em;
+  visibility: hidden;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-string.cm-url:not(.cm-formatting)::after {
+  visibility: visible;
+  display: inline;
+  content: "\e9cb";
+  font-family: "IcoMoon-Free";
+  font-size: 80em;
+}
+
+/** ...... 2.3.4 highlight (==) not visible anymore if not active line -- https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/221 */
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-formatting-highlight.cm-highlight {
+  font-size: 1em;
+  color: transparent !important;
+}
+
+
+
+/** ...... 2.3.2 Hide Block Reference ID's -- https://discord.com/channels/686053708261228577/716028884885307432/769267134114037871 */
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-blockid {
+  visibility: hidden;
+}
+
+.cm-blockid::first-letter {
+  visibility: visible;
+  font-weight: 800;
+}
+
+/* tables */
+
+.HyperMD-table-row {
+  line-height: normal !important;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+  background-color: var(--pre-code) !important;
+}

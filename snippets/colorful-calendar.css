@@ -1,0 +1,32 @@
+#calendar-container {
+  --color-background-heading: transparent;
+  --color-background-weeknum: transparent;
+  --color-background-weekend: transparent;
+  --color-background-day: transparent;
+  --color-background-day-empty: var(--background-secondary-alt);
+  --color-background-day-active: var(--interactive-accent);
+  --color-background-day-hover: var(--interactive-hover);
+  --color-dot: var(--bright-aqua);
+  --color-text-weeknum: var(--bright-aqua);
+  --color-text-title: var(--text-normal);
+  --color-text-heading: var(--text-normal);
+  --color-text-day: var(--text-normal);
+  --color-text-today: var(--text-accent);
+  --color-arrow: var(--bright-aqua);
+  --color-button: var(--text-muted);
+  --color-arrow: var(--bright-green);
+  --color-text-today: var(--text-accent);
+}
+
+#calendar-container .year {
+  color: var(--bright-orange);
+}
+
+#calendar-container [data-emoji-tag]::after {
+  content: attr(data-emoji-tag);
+  position: absolute;
+  top: -4px;
+  right: 4px;
+  height: 8px;
+  width: 8px;
+}

@@ -1,0 +1,58 @@
+div.markdown-preview-section pre {
+  position: relative;
+  padding: 1ex !important;
+  overflow: visible;
+  box-sizing: border-box !important;
+}
+
+div.markdown-preview-section pre:not(.frontmatter) {
+  border-left: 1ex solid var(--background-secondary-alt);
+  border-top: 1ex solid var(--background-secondary-alt);
+}
+
+div.markdown-preview-section pre.frontmatter {
+  margin: 0px !important;
+}
+
+div.markdown-preview-section pre::after {
+  --lang-color: var(--bright-red);
+  font-size: 12px;
+  font-family: var(--font-monospace);
+  position: absolute;
+  display: block;
+  top:0px;
+  right:0px;
+  padding: 1ex;
+  color: var(--lang-color);
+  text-shadow: 0px 0px 6px var(--lang-color);
+}
+
+div.markdown-preview-section pre.language-scala::after {
+  content: "Scala";
+  --lang-color: var(--bright-red);
+}
+
+div.markdown-preview-section pre.language-java::after {
+  content: "Java";
+  --lang-color: var(--bright-orange);
+}
+
+div.markdown-preview-section pre.language-js::after {
+  content: "JS";
+  --lang-color: var(--bright-yellow);
+}
+
+div.markdown-preview-section pre.language-cpp::after {
+  content: "C++";
+  --lang-color: var(--bright-blue);
+}
+
+div.markdown-preview-section pre.language-python::after {
+  content: "Python";
+  --lang-color: var(--bright-blue);
+}
+
+div.markdown-preview-section pre.frontmatter.language-yaml::after {
+  content: "Frontmatter";
+  --lang-color: var(--gray);
+}

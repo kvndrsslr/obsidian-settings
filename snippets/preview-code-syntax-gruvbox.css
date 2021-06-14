@@ -1,0 +1,116 @@
+/**
+* Gruvbox dark theme
+*
+* Adapted from a theme based on:
+* Vim Gruvbox dark Theme (https://github.com/morhetz/gruvbox)
+*
+* @author Azat S. <to@azat.io>
+* @version 1.0
+*/
+
+.theme-dark code[class*="language-"], .theme-dark pre[class*="language-"] {
+  color: #ebdbb2;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.theme-dark pre[class*="language-"]::-moz-selection, .theme-dark pre[class*="language-"] ::-moz-selection, .theme-dark code[class*="language-"]::-moz-selection, .theme-dark code[class*="language-"] ::-moz-selection {
+  color: #fff;
+  background: #f05e23;
+}
+
+.theme-dark pre[class*="language-"]::selection, .theme-dark pre[class*="language-"] ::selection, .theme-dark code[class*="language-"]::selection, .theme-dark code[class*="language-"] ::selection {
+  color: #fff;
+  background: #f05e23;
+}
+
+/* Code blocks */
+
+.theme-dark pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+.theme-dark :not(pre)>code[class*="language-"], .theme-dark pre[class*="language-"] {
+  background: var(--dark0-soft);
+}
+
+/* Inline code */
+
+.theme-dark :not(pre)>code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+}
+
+.theme-dark .token.comment, .theme-dark .token.prolog, .theme-dark .token.cdata {
+  color: #a89984;
+}
+
+.theme-dark .token.delimiter, .theme-dark .token.boolean, .theme-dark .token.keyword, .theme-dark .token.selector, .theme-dark .token.important, .theme-dark .token.atrule {
+  color: #fb4934;
+}
+
+.theme-dark .token.operator, .theme-dark .token.punctuation, .theme-dark .token.attr-name {
+  color: #a89984;
+}
+
+.theme-dark .token.tag, .theme-dark .token.tag .punctuation, .theme-dark .token.doctype, .theme-dark .token.builtin {
+  color: #fabd2f;
+}
+
+.theme-dark .token.entity, .theme-dark .token.number, .theme-dark .token.symbol {
+  color: #d3869b;
+}
+
+.theme-dark .token.property, .theme-dark .token.constant, .theme-dark .token.variable {
+  color: #fb4934;
+}
+
+.theme-dark .token.string, .theme-dark .token.char {
+  color: #b8bb26;
+}
+
+.theme-dark .token.attr-value, .theme-dark .token.attr-value .punctuation {
+  color: #a89984;
+}
+
+.theme-dark .token.url {
+  color: #b8bb26;
+  text-decoration: underline;
+}
+
+.theme-dark .token.function {
+  color: #fabd2f;
+}
+
+.theme-dark .token.regex {
+  background: #b8bb26;
+}
+
+.theme-dark .token.bold {
+  font-weight: bold;
+}
+
+.theme-dark .token.italic {
+  font-style: italic;
+}
+
+.theme-dark .token.inserted {
+  background: #a89984;
+}
+
+.theme-dark .token.deleted {
+  background: #fb4934;
+}
